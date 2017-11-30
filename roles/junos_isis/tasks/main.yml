@@ -1,0 +1,10 @@
+---
+
+- name: isis library test
+  junos_isis_test:
+    host: "{{ inventory_hostname }}"
+    provider: "{{ provider }}"
+    commands: show isis interface
+  register: result
+- debug:
+    var: result

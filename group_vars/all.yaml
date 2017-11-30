@@ -1,0 +1,11 @@
+---
+# make ansible play nice in a virtualenv
+ansible_python_interpreter: python
+
+provider:
+  host: "{{ inventory_hostname }}"
+  username: root
+  password: 'Manasa123'
+  port: 22
+  transport: cli
+

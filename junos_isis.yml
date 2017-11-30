@@ -1,0 +1,7 @@
+---
+- hosts: junos_group
+  gather_facts: no
+  connection: local
+
+  roles:
+    - junos_isis
